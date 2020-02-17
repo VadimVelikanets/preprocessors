@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  overflow-x: hidden;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container .wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 80px;
+}
+.container .wrapper .wrapper__item {
+  width: calc(50% - 80px);
+  padding: 30px;
+  border: 1px #000000 solid;
+  background: rgba(0, 0, 0, 0.03);
+  margin-bottom: 50px;
+  transition: 0.5s all ease;
+  border-radius: 3px;
+}
+.container .wrapper .wrapper__item:hover {
+  background: rgba(0, 102, 255, 0.1);
+}
+.container .wrapper .wrapper__item span {
+  font-size: 28px;
+  font-weight: bold;
+}
+.container .wrapper .wrapper__item a {
+  text-decoration: none;
+  color: #0066FF;
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.container .wrapper .wrapper__item a:hover {
+  color: #000000;
+}

@@ -1,7 +1,19 @@
-body { font-size: 16px; min-width: 320px; position: relative; line-height: 1.65; overflow-x: hidden; background: black; color: #333; }
+@font-face { font-family: "Circe"; font-weight: normal; font-style: normal; src: url("../fonts/CirceRegular/CirceRegular.eot"); src: url("../fonts/CirceRegular/CirceRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/CirceRegular/CirceRegular.woff") format("woff"), url("../fonts/CirceRegular/CirceRegular.ttf") format("truetype"); }
+
+@font-face { font-family: "Circe"; font-weight: 700; font-style: normal; src: url("../fonts/CirceBold/CirceBold.eot"); src: url("../fonts/CirceBold/CirceBold.eot?#iefix") format("embedded-opentype"), url("../fonts/CirceBold/CirceBold.woff") format("woff"), url("../fonts/CirceBold/CirceBold.ttf") format("truetype"); }
+
+body { font-size: 16px; min-width: 320px; position: relative; line-height: 1.65; overflow-x: hidden; color: #000000; }
 
 .container { max-width: 1200px; width: 100%; margin: 0 auto; }
 
 .container .wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; margin-top: 80px; }
 
-.container .wrapper .wrapper__item { width: 50%; padding: 30px; border-radius: 10px; border: 1px red solid; margin-bottom: 50px; }
+.container .wrapper .wrapper__item { width: -webkit-calc(50% - 80px); width: calc(50% - 80px); padding: 30px; border: 1px #000000 solid; background: rgba(0, 0, 0, 0.03); margin-bottom: 50px; -webkit-transition: .5s all ease; -o-transition: .5s all ease; transition: .5s all ease; border-radius: 3px; }
+
+.container .wrapper .wrapper__item:hover { background: rgba(0, 102, 255, 0.1); }
+
+.container .wrapper .wrapper__item span { font-size: 28px; font-weight: bold; }
+
+.container .wrapper .wrapper__item a { text-decoration: none; color: #0066FF; font-weight: bold; font-size: 22px; text-transform: uppercase; }
+
+.container .wrapper .wrapper__item a:hover { color: #000000; }

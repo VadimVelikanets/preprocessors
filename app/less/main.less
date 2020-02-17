@@ -1,16 +1,16 @@
-@import "fonts";
-
-$text: #000000;
-$itemBg: rgba(0, 0, 0, 0.03);
-$hoverBg: rgba(0, 102, 255, 0.1);
-$blue: #0066FF;
+@import "_fonts";
+@text: #000000;
+@itemBg: rgba(0, 0, 0, 0.03);
+@hoverBg: rgba(0, 102, 255, 0.1);
+@blue: #0066FF;
 body {
 	font-size: 16px;
 	min-width: 320px;
 	position: relative;
 	line-height: 1.65;
 	overflow-x: hidden;
-	color: $text;
+    color: @text;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container{
@@ -26,13 +26,13 @@ body {
 		.wrapper__item{
 			width: calc(50% - 80px);
 			padding: 30px;
-			border: 1px $text solid;
-			background: $itemBg;
+			border: 1px @text solid;
+			background: @itemBg;
 			margin-bottom: 50px;
 			transition: .5s all ease;
 			border-radius: 3px;
 			&:hover{
-				background: $hoverBg;
+				background: @hoverBg;
 			}
 			span{
 				font-size: 28px;
@@ -40,12 +40,12 @@ body {
 			}
 			a{
 				text-decoration: none;
-				color: $blue;
+				color: @blue;
 				font-weight: bold;
 				font-size: 22px;
 				text-transform: uppercase;
 				&:hover{
-					color: $text;
+					color: @text;
 				}
 			}	
 				
