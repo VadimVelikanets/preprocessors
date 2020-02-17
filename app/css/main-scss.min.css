@@ -1,0 +1,7 @@
+body { font-size: 16px; min-width: 320px; position: relative; line-height: 1.65; overflow-x: hidden; background: black; color: #333; }
+
+.container { max-width: 1200px; width: 100%; margin: 0 auto; }
+
+.container .wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; margin-top: 80px; }
+
+.container .wrapper .wrapper__item { width: 50%; padding: 30px; border-radius: 10px; border: 1px red solid; margin-bottom: 50px; }

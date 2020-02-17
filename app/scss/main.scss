@@ -1,0 +1,34 @@
+$accent: orange;
+$text: #333;
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	overflow-x: hidden;
+	background: black;
+	color: $text
+}
+
+.container{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	.wrapper{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 100%;
+		margin-top: 80px;
+		.wrapper__item{
+			width: 50%;
+			padding: 30px;
+			border-radius: 10px;
+			border: 1px red solid;
+			margin-bottom: 50px;
+		}
+	}
+
+}
+

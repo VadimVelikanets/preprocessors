@@ -1,0 +1,134 @@
+@import "vars"
+@import "fonts"
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap')
+   
+::placeholder
+  color: #666
+
+::selection
+  background-color: $accent
+  color: #fff
+
+html
+  overflow-x: hidden
+
+body
+  font-size: $default-size
+  min-width: 320px
+  position: relative
+  line-height: 1.3
+  font-family: 'Montserrat', sans-serif
+  overflow-x: hidden
+  opacity: 1
+  color: $default-color
+
+  select
+    background-color: #fff
+    outline: none
+    appearance: none
+
+  input, textarea, .mob-select
+    background-color: #fff
+    border: #666 1px solid
+    outline: none
+
+  a
+    text-decoration: none
+    color: $default-color
+
+    &:hover
+      color: $default-color
+
+b, strong
+  font-weight: bold
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+.icon
+  display: inline-block
+  vertical-align: middle
+  fill: #000
+  stroke: inherit
+  max-width: 18px
+  max-height: 18px
+
+.flex
+  display: flex
+  align-items: center
+  justify-content: center
+
+.column
+  display: flex
+  flex-direction: column
+
+.flex__start
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+
+.flex__beetween
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+.flex__wrap
+  display: flex
+  flex-wrap: wrap
+
+.container
+  padding: $container-padding
+  margin: 0 auto
+  max-width: $max-width
+  width: 100%
+  height: 100%
+
+.bg__cover
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+.bg__contain
+  background-position: center
+  background-repeat: no-repeat
+  background-size: contain
+
+//hamburger
+.my_hamburger
+  cursor: pointer
+  display: block
+  width: 24px
+  height: 24px
+  .hamburger_block
+    position: relative
+    height: 100%
+    .hamburger_top
+      top: 6px
+    .hamburger_bottom
+      top: 16px
+  .hamburger_top, .hamburger_bottom
+    position: absolute
+    transition: top .3s cubic-bezier(0.04, 0.04, 0.12, 1) .2999s,transform .1s cubic-bezier(0.04, 0.04, 0.12, 1)
+    width: 24px
+    height: 2px
+    background-color: #4A4A4A
+    border-radius: 2px
+  &.is-active
+    .hamburger_block
+      .hamburger_top, .hamburger_bottom
+        transition: top .3s cubic-bezier(0.04, 0.04, 0.12, 1),transform .1s cubic-bezier(0.04, 0.04, 0.12, 1) .29999s
+      .hamburger_top
+        top: 11px
+        transform: rotate(45deg)
+      .hamburger_bottom
+        top: 11px
+        transform: rotate(-45deg)
+
+
+
+@import "media"
+// Always at the end
+
+
