@@ -1,8 +1,5 @@
-@font-face { font-family: "Circe"; font-weight: normal; font-style: normal; src: url("../fonts/CirceRegular/CirceRegular.eot"); src: url("../fonts/CirceRegular/CirceRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/CirceRegular/CirceRegular.woff") format("woff"), url("../fonts/CirceRegular/CirceRegular.ttf") format("truetype"); }
-
-@font-face { font-family: "Circe"; font-weight: 700; font-style: normal; src: url("../fonts/CirceBold/CirceBold.eot"); src: url("../fonts/CirceBold/CirceBold.eot?#iefix") format("embedded-opentype"), url("../fonts/CirceBold/CirceBold.woff") format("woff"), url("../fonts/CirceBold/CirceBold.ttf") format("truetype"); }
-
-body { font-size: 16px; min-width: 320px; position: relative; line-height: 1.65; overflow-x: hidden; color: #000000; }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+body { font-size: 16px; min-width: 320px; position: relative; line-height: 1.65; overflow-x: hidden; color: #000000; font-family: "Open Sans", sans-serif; }
 
 .container { max-width: 1200px; width: 100%; margin: 0 auto; }
 

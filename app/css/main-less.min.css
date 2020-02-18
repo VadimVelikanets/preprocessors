@@ -19,7 +19,8 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-.container .wrapper {
+.container .wrapper,
+.container .new-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -51,4 +52,7 @@ body {
 }
 .container .wrapper .wrapper__item a:hover {
   color: #000000;
+}
+.container .new-wrapper {
+  margin-right: 40px;
 }
